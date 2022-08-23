@@ -48,7 +48,7 @@ from AsukaRobot.modules.helper_funcs.chat_status import sudo_plus
 from AsukaRobot.modules.helper_funcs.extraction import extract_user
 from AsukaRobot import telethn
 
-Asuka_IMG = "https://telegra.ph/file/645e0b5ca6382d6d73ab5.jpg"
+Asuka_IMG = "https://te.legra.ph/file/6d0aeab00834e6ba666e9.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/AsukaUpdates/4"),
+                             url="https://t.me/HanmaUpdates/9"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/AsukaUpdates/5"),
+                             url="https://t.me/HanmaUpdates/3"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -474,8 +474,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="t.me/AsukaSupport")
+                             text="Owner",
+                             url="t.me/AranXSiesta")
                      ] 
                 ]
             ),
@@ -490,7 +490,7 @@ def stats(update, context):
                     )
                     + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/AsukaUpdates)\n\n"
                 )
-                + "╘══「 by [The Kaizuryu](https://t.me/TheKaizuryu) 」\n"
+                + "╘══「 by [Vᴀʟʜᴀʟʟᴀ Nᴇᴛᴡᴏʀᴋ](https://t.me/Valhalla_Network) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
