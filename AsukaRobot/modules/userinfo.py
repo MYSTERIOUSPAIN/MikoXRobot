@@ -316,25 +316,25 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n• Disaster Level: God"
+        text += "\n\n• Disaster Level: President"
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n• Disaster Level: Evangelion Master"
+        text += "\n\n• Disaster Level: Manager"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n• Disaster Levl: Evangelion Pilot"
+        text += "\n\n• Disaster Levl: Commander"
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n• Disaster Level: Evangelion 3.0"
+        text += "\n\n• Disaster Level: Vice Commander"
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\n• Disaster Level: Evangelion 2.0"
+        text += "\n\n• Disaster Level: Captain"
         disaster_level_present = True
     elif user.id == 5302104643:
         text += "\n\n• Ace Of Asuka"
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\n• Disaster Level: Evengalion 1.0"
+        text += "\n\n• Disaster Level: Vice Captain"
         disaster_level_present = True
     try:
         user_member = chat.get_member(user.id)
@@ -468,14 +468,14 @@ def stats(update, context):
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
             + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/AsukaUpdates)\n\n"
-            + "\n╘══「 by [The Kaizuryu](https://t.me/TheKaizuryu) 」\n",
+            + "\n╘══「 by [Valhalla Network](https://t.me/Valhalla_Network) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Owner",
-                             url="t.me/AranXSiesta")
+                             text="Off Topic",
+                             url="t.me/Anime_Discussion69")
                      ] 
                 ]
             ),
@@ -488,7 +488,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/AsukaUpdates)\n\n"
+                    + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/HanmaUpdates)\n\n"
                 )
                 + "╘══「 by [Vᴀʟʜᴀʟʟᴀ Nᴇᴛᴡᴏʀᴋ](https://t.me/Valhalla_Network) 」\n"
             ),
