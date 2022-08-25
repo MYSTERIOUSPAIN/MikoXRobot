@@ -168,7 +168,7 @@ Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
 PM_PHOTO = "https://telegra.ph/file/e1c7a808e3b3f7bbbe053.jpg"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/1cb78c8e914db28c43ba6.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -792,13 +792,13 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Evangelion Unit-02 Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Off-Topic",
-                             url="https://t.me/Anime_Chat_XKaizuryu")
+                             url="https://t.me/Anime_Discussion69")
                      ]
                 ]
             ),
