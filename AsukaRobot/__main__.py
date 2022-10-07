@@ -60,31 +60,31 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-*Hᴇʏ {},*
-*I'ᴍ Hᴀᴍɴᴀ Sʜᴜᴊɪ, Tᴏᴋʏᴏ Rᴇᴠᴇɴɢᴇʀs Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
-
-❍ *EVA Unit - 02*
-❍ *Uptime* - {}
-❍ *Python Version* - {}
+*Kᴏɴɪᴄʜɪᴡᴀ {},*
+*I'ᴍ Yᴀᴇ Mɪᴋᴏ A Gᴀᴍᴇ Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ.*
 
 *Hɪᴛ Tʜᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Lɪsᴛ Oғ Mʏ Cᴏᴍᴍᴀɴᴅs.××*
 
-*• Pᴏᴡᴇʀᴇᴅ Bʏ* [Vᴀʟʜᴀʟʟᴀ Nᴇᴛᴡᴏʀᴋ](https://t.me/Valhalla_Network)
+
+
+
+
+
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Aᴅᴅ Hᴀɴᴍᴀ Sʜᴜᴊɪ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕️",
-                             url="https://t.me/AsukaRobot?startgroup=true"),
+                             text="➕️ Aᴅᴅ Yᴀᴇ Mɪᴋᴏ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕️",
+                             url="https://t.me/MikoXRobot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Oᴡɴᴇʀ",
-                             url="https://t.me/AranXSiesta"),
+                             text="Sᴜᴘᴘᴏʀᴛ",
+                             url="https://t.me/sukunaxbot_support"),
                        InlineKeyboardButton(
-                             text="Aʙᴏᴜᴛ Hᴀɴᴍᴀ",
-                             callback_data="asuka_"),
+                             text="Uᴘᴅᴀᴛᴇs",
+                             url="https://t.me/sukuna_updates"),
                    ],
                   [
                         InlineKeyboardButton(
@@ -120,7 +120,7 @@ ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Hanma* here!
+Hey [{}] *Yae Miko* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -151,7 +151,7 @@ Asuka_IMG = (
       "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
 )
 
-TEXXT = "Oɪ Oɪ Oɪ, I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ.\nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
+TEXXT = "Yᴇs, I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ.\nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
 
 Asuka_N_IMG = (
       "https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
@@ -166,9 +166,9 @@ Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
 
 Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
-PM_PHOTO = "https://telegra.ph/file/e1c7a808e3b3f7bbbe053.jpg"
+PM_PHOTO = "https://telegra.ph/file/5056ac1d9c1b59485a3eb.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/1cb78c8e914db28c43ba6.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/a2fc60833945d88495b22.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -291,8 +291,8 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.full_name
             id = update.effective_user.id
 
-            update.effective_message.reply_photo(
-                photo=(PM_PHOTO),
+            update.effective_message.reply_video(
+                video=(PM_PHOTO),
                 caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -308,18 +308,18 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://te.legra.ph/file/e6ad885589f3d7d612294.mp4",
-                caption="Oɪ Oɪ Oɪ, I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ. \nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
+                video="https://telegra.ph/file/5056ac1d9c1b59485a3eb.mp4",
+                caption="Yᴇs, I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ. \nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Support",
-                             url="t.me/HANMAxSUPPORT_0"),
+                             url="https://t.me/sukunaxbot_support"),
                        InlineKeyboardButton(
                              text="Updates",
-                             url="t.me/HanmaUpdates")
+                             url="https://t.me/sukuna_updates")
                      ]
                 ]
             ),
