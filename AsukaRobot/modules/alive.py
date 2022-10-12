@@ -59,7 +59,7 @@ async def hmm(yes):
     Asuka += f"• **My Master** - [Xelcius](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/AsukaSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
-    on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg",caption=Asuka, buttons=BUTTON)
+    on = await borg.send_file(yes.chat_id, file=https://telegra.ph/file/9a9c908883302b947da1a.mp4,caption=Asuka, buttons=BUTTON)
 
 @register(pattern=("/repo"))
 async def repo(event):
